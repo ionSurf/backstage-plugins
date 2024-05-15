@@ -8,6 +8,7 @@ backend.add(import('@backstage/plugin-proxy-backend/alpha'));
 backend.add(import('@backstage/plugin-techdocs-backend/alpha'));
 backend.add(import('@backstage/plugin-search-backend/alpha'));
 backend.add(import('@backstage/plugin-app-backend/alpha'));
+backend.add(import('@backstage/plugin-auth-backend-module-guest-provider'));
 backend.add(import('@axis-backstage/plugin-jira-dashboard-backend'));
 backend.add(import('@axis-backstage/plugin-readme-backend'));
 backend.add(import('@axis-backstage/plugin-statuspage-backend'));

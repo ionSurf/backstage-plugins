@@ -151,15 +151,17 @@ export async function createRouter(
         return;
       }
 
-      const credentials = await httpAuth.credentials(request, {
-        allow: ['user'],
-      });
+      let credentials;
 
-      const userEntityRef = credentials.principal.userEntityRef;
-
-      if (!userEntityRef) {
-        logger.warn(`Could not find user identity`);
+      try {
+        credentials = await httpAuth.credentials(request, {
+          allow: ['user'],
+        });
+      } catch (err) {
+        logger.warn(`Could not find user identity. Now logged in as guest.`);
       }
+
+      const userEntityRef = credentials?.principal?.userEntityRef;
 
       let filters: Filter[] = [];
 
