@@ -4335,6 +4335,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage/plugin-auth-backend-module-guest-provider@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@backstage/plugin-auth-backend-module-guest-provider@npm:0.1.4"
+  dependencies:
+    "@backstage/backend-common": "npm:^0.22.0"
+    "@backstage/backend-plugin-api": "npm:^0.6.18"
+    "@backstage/catalog-model": "npm:^1.5.0"
+    "@backstage/errors": "npm:^1.2.4"
+    "@backstage/plugin-auth-node": "npm:^0.4.13"
+    passport-oauth2: "npm:^1.7.0"
+  checksum: a22a1c662118dfc6aa732ad2871601a35feedfaaf7dced4035edf5b0ab1ed7cccc2cd8a470325a29cf0c5df6cc9692ec063fa11b56e7d4bde36b01f790ea2154
+  languageName: node
+  linkType: hard
+
 "@backstage/plugin-auth-backend-module-microsoft-provider@npm:^0.1.12":
   version: 0.1.12
   resolution: "@backstage/plugin-auth-backend-module-microsoft-provider@npm:0.1.12"
@@ -15479,6 +15493,7 @@ __metadata:
     "@backstage/config": "npm:^1.2.0"
     "@backstage/plugin-app-backend": "npm:^0.3.65"
     "@backstage/plugin-auth-backend": "npm:^0.22.4"
+    "@backstage/plugin-auth-backend-module-guest-provider": "npm:^0.1.4"
     "@backstage/plugin-auth-node": "npm:^0.4.12"
     "@backstage/plugin-catalog-backend": "npm:^1.21.1"
     "@backstage/plugin-permission-common": "npm:^0.7.13"
@@ -27267,6 +27282,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"oauth@npm:0.10.x":
+  version: 0.10.0
+  resolution: "oauth@npm:0.10.0"
+  checksum: 76f3e186cfd76cb33e5d5d442861c86680a5c3b71b2db1b854212087532c265a69de1a2ab9db683e6c6df733e17cfc67476527b81b224a19c1917de2bc3f75fa
+  languageName: node
+  linkType: hard
+
 "oauth@npm:0.9.x":
   version: 0.9.15
   resolution: "oauth@npm:0.9.15"
@@ -28102,6 +28124,19 @@ __metadata:
     uid2: "npm:0.0.x"
     utils-merge: "npm:1.x.x"
   checksum: adf7bdb09cdec3278357a576db2e534b9df1fe92eddd25e52b754273e8c13e3c3fbfa22f3720f941a90372355a366b97da31f438c0be1d6e2593d4722f180dfd
+  languageName: node
+  linkType: hard
+
+"passport-oauth2@npm:^1.7.0":
+  version: 1.8.0
+  resolution: "passport-oauth2@npm:1.8.0"
+  dependencies:
+    base64url: "npm:3.x.x"
+    oauth: "npm:0.10.x"
+    passport-strategy: "npm:1.x.x"
+    uid2: "npm:0.0.x"
+    utils-merge: "npm:1.x.x"
+  checksum: 16b431bd856b84dfe0c9c913dcbea6ff54875befac1035171b0dce1c77f79072dc5e26d785b13c2e62c034c8174a1a47571751d1066bdbcdb9108de217c0b19b
   languageName: node
   linkType: hard
 

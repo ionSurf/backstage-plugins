@@ -22,6 +22,18 @@ spec:
   system: examples
   providesApis: [example-grpc-api]
 ---
+apiVersion: backstage.io/v1beta1
+kind: User
+metadata:
+  namespace: default
+  description: Software Developer
+  name: fridaja
+spec:
+  profile:
+    displayName: Frida Jacobsson
+    email: Frida.Jacobsson@axis.com
+    picture: https://avatars.rnd-tools.k8s.axis.com/avatars/fridaja.jpg
+---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
 apiVersion: backstage.io/v1alpha1
 kind: API

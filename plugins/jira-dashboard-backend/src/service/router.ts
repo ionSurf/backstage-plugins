@@ -159,6 +159,8 @@ export async function createRouter(
         });
         const userIdentity = credentials.principal.userEntityRef;
 
+        logger.info(userIdentity, 'HERE');
+
         userEntity = (await catalogClient.getEntityByRef(userIdentity, {
           token,
         })) as UserEntity;
