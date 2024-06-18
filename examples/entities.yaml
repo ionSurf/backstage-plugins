@@ -14,7 +14,7 @@ metadata:
   name: example-website
   annotations:
     jira.com/project-key: BS
-
+    manager: fridaja
 spec:
   type: website
   lifecycle: experimental

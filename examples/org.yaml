@@ -7,11 +7,25 @@ metadata:
 spec:
   memberOf: [guests]
 ---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fridaja
+  description: Software Developer
+spec:
+  profile:
+    displayName: Frida Jacobsson
+    email: Frida.Jacobsson@axis.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie
+  memberOf: [guests]
+---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: guests
+  manager: fridaja
 spec:
   type: team
   children: []

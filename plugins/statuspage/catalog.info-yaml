@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: axis-backstage-plugin-vacation-calendar
+  title: '@axis-backstage/plugin-vacation-calendar'
+spec:
+  lifecycle: experimental
+  type: backstage-frontend-plugin
+  owner: backstage-plugins-maintainers
