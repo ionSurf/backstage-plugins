@@ -11,12 +11,19 @@ const isTimeLineItem = (
   return item !== undefined;
 };
 
-const getFullName = (users: UserEntity[], userId: string) => {
-  const name = head(userId.split('@'));
-  const user = users.find(u => u.metadata.name === name);
+const getFullName = (
+  users: UserEntity[],
+  userId: string,
+): string | undefined => {
+  const name = userId.split('@')[0];
+
+  const user = users.find(
+    u => u.metadata.name === name || u.spec.profile?.email === userId,
+  );
 
   if (user) return user.spec.profile?.displayName;
-  return userId;
+
+  return name;
 };
 
 const getUser = (users: UserEntity[], userId: string) => {
